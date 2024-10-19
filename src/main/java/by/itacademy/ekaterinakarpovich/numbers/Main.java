@@ -4,7 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         int number = 9;
-        String numberAsAString = "";
+        String numberAsAString;
+
+        numberAsAString = getStringValueOfNumber(number);
+        System.out.println(numberAsAString);
     }
 
     public static String getStringValueOfNumber(int number) {

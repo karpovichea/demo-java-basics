@@ -3,8 +3,8 @@ package by.itacademy.ekaterinakarpovich.numbers;
 public class Main {
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(NumberUtils.getStringValue(i));
+        for (int number = 0; number < 10; number++) {
+            System.out.println(NumberUtils.getStringValue(number));
         }
     }
 }

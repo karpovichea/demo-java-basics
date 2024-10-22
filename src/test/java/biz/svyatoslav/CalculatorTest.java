@@ -28,10 +28,10 @@ public class CalculatorTest {
         WebElement inputWeightWebElement = driver.findElement(inputWeightBy);
         inputWeightWebElement.sendKeys("85");
 
-        String inputGenderXpath = "//html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[5]/td[2]/input[1]";
-        By inputGenderBy = By.xpath(inputGenderXpath);
-        WebElement inputGenderWebElement = driver.findElement(inputGenderBy);
-        inputGenderWebElement.click();
+        String genderMaleXpath = "//html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[5]/td[2]/input[1]";
+        By genderMaleBy = By.xpath(genderMaleXpath);
+        WebElement genderMaleWebElement = driver.findElement(genderMaleBy);
+        genderMaleWebElement.click();
 
         String buttonCalculateXpath = "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td/input";
         By buttonCalculateBy = By.xpath(buttonCalculateXpath);

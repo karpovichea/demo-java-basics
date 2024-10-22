@@ -12,9 +12,14 @@ public class CalculatorTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://svyatoslav.biz/testlab/wt/index.php");
 
-        String xpath = "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td/input";
-        By by = By.xpath(xpath);
-        WebElement element = driver.findElement(by);
-        element.click();
+        String xpathName = "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[2]/td[2]/input";
+        By byName = By.xpath(xpathName);
+        WebElement name = driver.findElement(byName);
+        name.sendKeys("John");
+
+        String xpathButton = "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td/input";
+        By byButton = By.xpath(xpathButton);
+        WebElement button = driver.findElement(byButton);
+        button.click();
     }
 }

@@ -1,5 +1,7 @@
-package biz.svyatoslav;
+package biz.svyatoslav.tests;
 
+import biz.svyatoslav.pages.LoginPage;
+import biz.svyatoslav.pages.LoginPageMessages;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;

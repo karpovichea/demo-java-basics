@@ -1,4 +1,4 @@
-package biz.svyatoslav;
+package biz.svyatoslav.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package biz.svyatoslav;
+package biz.svyatoslav.pages;
 
 public class LoginPageXpath {
     public static final String TEXT_HEADER_XPATH= "/html/body/table/tbody/tr[1]/td";

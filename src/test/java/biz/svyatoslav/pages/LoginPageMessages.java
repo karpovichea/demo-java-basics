@@ -1,4 +1,4 @@
-package biz.svyatoslav;
+package biz.svyatoslav.pages;
 
 public class LoginPageMessages {
     public static final String INVALID_HEIGHT_AND_INVALID_WEIGHT_AND_GENDER = "Рост должен быть в диапазоне 50-300 см.\n" +

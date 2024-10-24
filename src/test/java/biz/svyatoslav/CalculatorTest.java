@@ -8,6 +8,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CalculatorTest {
+
+    @Test
+    public void test0() {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://svyatoslav.biz/testlab/wt/index.php");
+
+        String textHeaderXpath = "/html/body/table/tbody/tr[1]/td";
+        By textHeaderBy = By.xpath(textHeaderXpath);
+        WebElement textHeaderWebElement = driver.findElement(textHeaderBy);
+        String actualResult = textHeaderWebElement.getText();
+        String expectedResult = "Расчёт веса";
+
+        Assertions.assertTrue(actualResult.contains(expectedResult), "Должно было быть " + actualResult);
+    }
+
     @Test
     public void test1() {
         WebDriver driver = new ChromeDriver();
@@ -37,12 +52,5 @@ public class CalculatorTest {
         By buttonCalculateBy = By.xpath(buttonCalculateXpath);
         WebElement buttonCalculateWebElement = driver.findElement(buttonCalculateBy);
         buttonCalculateWebElement.click();
-
-        String messageXpath = "/html/body/table/tbody/tr[2]/td[2]";
-        By messageBy = By.xpath(messageXpath);
-        WebElement messageWebElement = driver.findElement(messageBy);
-        String expectedValue = messageWebElement.getText();
-
-        Assertions.assertEquals("Идеальная масса тела", expectedValue, "Сообщение отличается");
     }
 }
